@@ -64,10 +64,59 @@ footer {
     background-color: white;
     color: black;
 }
+
+.divider{
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+}
+
+.left-div-bottom-h3{
+    font-size: 30px;
+}
+
+.left-div-bottom-h5{
+    font-size: 23px;
+}
+
+.left-div-bottom-a{
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.left-div-bottom-divider{
+    width: 80%;
+    height: 2px;
+    color: black;
+}
+
+.right-div-bottom-h5{
+    font-size: 23px;
+    margin-top: 2.7%;
+}
+
+.right-div-bottom-p{
+    font-size: 28px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-weight: 500;
+}
 /**Media queries**/
 
 @media(max-width: 1000px){
     header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main{
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -77,11 +126,19 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .left-div-h1{
         font-size: 90px;
     }
 
     .right-div-p{
+        font-size: 26px;
+    }
+
+    .right-div-bottom-p{
         font-size: 26px;
     }
 }
@@ -98,6 +155,10 @@ footer {
     .right-div-p{
         font-size: 25px;
     }
+
+    .right-div-bottom-p{
+        font-size: 25px;
+    }
 }
 
 @media(max-width: 510px){
@@ -112,6 +173,11 @@ footer {
     .right-div-p{
         font-size: 25px;
     }
+
+    .right-div-bottom-p{
+        font-size: 25px;
+    }
+
 }
 
 @media(max-width: 482px){
@@ -124,6 +190,10 @@ footer {
     }
 
     .right-div-p{
+        font-size: 23px;
+    }
+
+    .right-div-bottom-p{
         font-size: 23px;
     }
 }
@@ -140,6 +210,10 @@ footer {
     .right-div-p{
         font-size: 22px;
     }
+
+    .right-div-bottom-p{
+        font-size: 22px;
+    }
 }
 
 @media(max-width: 366px){
@@ -154,6 +228,10 @@ footer {
     .right-div-p{
         font-size: 21px;
     }
+
+    .right-div-bottom-p{
+        font-size: 21px;
+    }
 }
 
 @media(max-width: 337px){
@@ -166,6 +244,10 @@ footer {
     }
 
     .right-div-p{
+        font-size: 20px;
+    }
+
+    .right-div-bottom-p{
         font-size: 20px;
     }
 }
