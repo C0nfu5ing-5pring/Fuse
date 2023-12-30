@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: black;
+    overflow-x: hidden;
+    font-family: "Sora", sans-serif;
+}
+
+*::selection {
+    color: white;
+    background-color: black;
+}
+
+.h1-container {
+    text-align: center;
+    font-size: 60px;
+    margin: 5%;
+}
+
+.executive-h1 {
+    font-size: 50px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.executives {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.executive-image {
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    filter: grayscale(1);
+}
+
+.executive-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.director-h1 {
+    font-size: 50px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.directors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.director-image {
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    filter: grayscale(1);
+}
+
+.director-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.partner-h1 {
+    font-size: 50px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.partners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.partner-image {
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    filter: grayscale(1);
+}
+
+.partner-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
