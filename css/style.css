@@ -274,7 +274,7 @@ footer {
   margin-bottom: 10px;
 }
 
-/**MEDIA QUERIES*********************************************************************/          
+/**MEDIA QUERIES**/          
 
 @media (min-width: 1200px) and (max-width: 1240px){
   .products-container {

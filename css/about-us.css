@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  color: black;
+  overflow-x: hidden;
+  font-family: "Sora", sans-serif;
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-div{
+    padding: 20px;
+}
+
+.right-div{
+    padding: 20px;
+}
+
+.left-div-h1{
+    font-size: 120px;
+    margin-top: 30px;
+    font-weight: 800;
+}
+
+.right-div-p{
+    font-size: 28px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.copyright-p {
+    color: white;
+}
+
+.copyright-p::selection {
+    background-color: white;
+    color: black;
+}
+/**Media queries**/
+
+@media(max-width: 1000px){
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width: 750px){
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-div-h1{
+        font-size: 90px;
+    }
+
+    .right-div-p{
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 560px){
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-div-h1{
+        font-size: 80px;
+    }
+
+    .right-div-p{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 510px){
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-div-h1{
+        font-size: 75px;
+    }
+
+    .right-div-p{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 482px){
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-div-h1{
+        font-size: 60px;
+    }
+
+    .right-div-p{
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 395px){
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-div-h1{
+        font-size: 55px;
+    }
+
+    .right-div-p{
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 366px){
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-div-h1{
+        font-size: 50px;
+    }
+
+    .right-div-p{
+        font-size: 21px;
+    }
+}
+
+@media(max-width: 337px){
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-div-h1{
+        font-size: 45px;
+    }
+
+    .right-div-p{
+        font-size: 20px;
+    }
+}
