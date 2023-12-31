@@ -14,10 +14,12 @@
     background-color: black;
 }
 
-.h1-container {
+.header-h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 100px;
+    font-weight: 700;
     margin: 5%;
+    overflow: hidden;
 }
 
 .h1 {
