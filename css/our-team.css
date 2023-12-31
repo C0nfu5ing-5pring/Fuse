@@ -20,7 +20,7 @@
     margin: 5%;
 }
 
-.executive-h1 {
+.h1 {
     font-size: 50px;
     font-weight: 400;
     padding: 20px;
@@ -53,12 +53,6 @@
     object-fit: cover;
 }
 
-.director-h1 {
-    font-size: 50px;
-    font-weight: 400;
-    padding: 20px;
-}
-
 .directors {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -86,12 +80,6 @@
     object-fit: cover;
 }
 
-.partner-h1 {
-    font-size: 50px;
-    font-weight: 400;
-    padding: 20px;
-}
-
 .partners {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -117,4 +105,215 @@
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.staff-h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 20px;
+    gap: 20px;
+    border: 2px red solid;
+}
+
+.staff-image {
+    width: 245px;
+    height: 370px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    filter: grayscale(1);
+}
+
+/**MEDIA QUERIES**/
+
+/* @media(max-width: 1330px){
+    .image-container {
+        grid-template-columns: repeat(4, 1fr);
+    }   
+    .staff-image {
+        width: 290px;
+        height: 410px;
+    }
+}
+
+@media(max-width: 1270px){
+    .image-container {
+        grid-template-columns: repeat(3, 1fr);
+    }   
+
+    .staff-image {
+        width: 340px;
+        height: 490px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 1270px){
+    .staff-image {
+        width: 320px;
+        height: 460px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 1132px){
+    .staff-image {
+        width: 300px;
+        height: 440px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 1070px){
+    .staff-image {
+        width: 260px;
+        height: 420px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 956px){
+    .staff-image {
+        width: 235px;
+        height: 365px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 880px){
+    .staff-image {
+        width: 210px;
+        height: 330px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 808px){
+    .staff-image {
+        width: 190px;
+        height: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 744px){
+    .staff-image {
+        width: 170px;
+        height: 260px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 684px){
+    .image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }  
+
+    .staff-image {
+        width: 270px;
+        height: 370px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 684px){
+    .staff-image {
+        width: 230px;
+        height: 340px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 584px){
+    .staff-image {
+        width: 200px;
+        height: 310px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 526px){
+    .staff-image {
+        width: 190px;
+        height: 280px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 504px){
+    .image-container {
+        grid-template-columns: repeat(1, 1fr);
+    }  
+
+    .staff-image {
+        width: 350px;
+        height: 520px;
+        margin-left: 60px;
+    }
+}
+
+@media(max-width: 454px){
+    .image-container {
+        grid-template-columns: repeat(1, 1fr);
+    }  
+}
+
+@media(max-width: 504px){
+    .image-container {
+        grid-template-columns: repeat(1, 1fr);
+    }  
+
+    .staff-image {
+        width: 350px;
+        height: 520px;
+        margin-left: 60px;
+    }
+} */
+
+@media (max-width: 956px) {
+    .h1{
+        font-size: 48px;
+    }
+
+    .executives {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .executive-image {
+        width: 250px;
+        height: 400px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .directors {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .director-image {
+        width: 250px;
+        height: 400px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .partners {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .partner-image {
+        width: 250px;
+        height: 400px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
 }

@@ -1,10 +1,169 @@
-* {
-  text-decoration: none;
-  user-select: none;
+*{
+  margin: 0;
+  padding: 0;   
   box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  color: black;
-  overflow-x: hidden;
+  user-select: none;
   font-family: "Sora", sans-serif;
+  color: black ;
+}
+
+body{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.form{
+  width: 35%;
+  align-self: center;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.logo-container img{
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  color: black;
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  border: .5px solid black;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.94);
+  transition: all .4s ease-in;
+}
+
+.field span{
+  color: black;
+  width: 40px;
+  padding-left: 10px;
+  line-height: 44px;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 16px;
+}
+
+.space{
+  margin-top: 16px;
+}
+
+.show{
+  position: absolute;
+  right: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  color: black;
+  display: none;
+  cursor: pointer;
+}
+
+.pass-key:valid ~ .show{
+  display: block;
+}
+
+.forget,.password{
+  text-align: center;
+  margin: 10px 0;
+}
+
+.forget a{
+  text-decoration: none;
+}
+
+.forget:hover a{
+  text-decoration: underline;
+}
+
+.field input[type="submit"]{
+  background: transparent;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.field input[type="submit"]:hover{
+ color: white;
+ background-color: black;
+ border: none;
+ border-radius: 3px;
+ transition: .4s all ease-in-out; 
+}
+.login{
+  margin: 20px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.links{
+  display: flex;
+  cursor: pointer;
+  margin: 0 0 20px 0;
+}
+
+.facebook,.instagram{
+  width: 100%;
+  height: 45px;
+  padding: 0px 8px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+
+.facebook{
+  margin-left: 0;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.instagram{
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.links i{
+  font-size: 17px;
+}
+
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.signup{
+  font-size: 15px;
+}
+
+.signup a{
+  text-decoration: none;
+  margin-left: 4px;
+  color: black;
+  font-weight: 600;
+}
+
+.signup a:hover{
+  text-decoration: underline;
 }
