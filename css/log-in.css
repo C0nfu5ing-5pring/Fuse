@@ -1,13 +1,13 @@
-*{
+* {
   margin: 0;
-  padding: 0;   
+  padding: 0;
   box-sizing: border-box;
   user-select: none;
   font-family: "Sora", sans-serif;
-  color: black ;
+  color: black;
 }
 
-body{
+body {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -15,7 +15,7 @@ body{
   height: 100vh;
 }
 
-.form{
+.form {
   width: 35%;
   align-self: center;
   position: relative;
@@ -24,12 +24,12 @@ body{
   border: 1px solid black;
 }
 
-.logo-container img{
+.logo-container img {
   height: 100%;
   width: 100%;
 }
 
-h1{
+h1 {
   color: black;
   font-size: 33px;
   font-weight: 600;
@@ -37,25 +37,25 @@ h1{
   text-align: center;
 }
 
-.field{
+.field {
   position: relative;
   height: 45px;
   width: 100%;
   display: flex;
-  border: .5px solid black;
+  border: 0.5px solid black;
   border-radius: 6px;
-  background: rgba(255,255,255,0.94);
-  transition: all .4s ease-in;
+  background: rgba(255, 255, 255, 0.94);
+  transition: all 0.4s ease-in;
 }
 
-.field span{
+.field span {
   color: black;
   width: 40px;
   padding-left: 10px;
   line-height: 44px;
 }
 
-.field input{
+.field input {
   height: 100%;
   width: 100%;
   background: transparent;
@@ -65,11 +65,11 @@ h1{
   font-size: 16px;
 }
 
-.space{
+.space {
   margin-top: 16px;
 }
 
-.show{
+.show {
   position: absolute;
   right: 18px;
   font-size: 13px;
@@ -79,24 +79,25 @@ h1{
   cursor: pointer;
 }
 
-.pass-key:valid ~ .show{
+.pass-key:valid ~ .show {
   display: block;
 }
 
-.forget,.password{
+.forget,
+.password {
   text-align: center;
   margin: 10px 0;
 }
 
-.forget a{
+.forget a {
   text-decoration: none;
 }
 
-.forget:hover a{
+.forget:hover a {
   text-decoration: underline;
 }
 
-.field input[type="submit"]{
+.field input[type="submit"] {
   background: transparent;
   font-size: 18px;
   letter-spacing: 1px;
@@ -104,26 +105,27 @@ h1{
   cursor: pointer;
 }
 
-.field input[type="submit"]:hover{
- color: white;
- background-color: black;
- border: none;
- border-radius: 3px;
- transition: .4s all ease-in-out; 
+.field input[type="submit"]:hover {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 3px;
+  transition: 0.4s all ease-in-out;
 }
-.login{
+.login {
   margin: 20px 0;
   border-radius: 6px;
   text-align: center;
 }
 
-.links{
+.links {
   display: flex;
   cursor: pointer;
   margin: 0 0 20px 0;
 }
 
-.facebook,.instagram{
+.facebook,
+.instagram {
   width: 100%;
   height: 45px;
   padding: 0px 8px;
@@ -131,43 +133,44 @@ h1{
   margin-left: 10px;
 }
 
-.facebook{
+.facebook {
   margin-left: 0;
   border: 1px solid black;
   border-radius: 6px;
 }
 
-.instagram{
+.instagram {
   border: 1px solid black;
   border-radius: 6px;
 }
 
-.links i{
+.links i {
   font-size: 17px;
 }
 
-i span{
+i span {
   margin-left: 8px;
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 16px;
 }
 
-.signup{
+.signup {
   font-size: 15px;
 }
 
-.signup a{
+.signup a {
   text-decoration: none;
   margin-left: 4px;
   color: black;
   font-weight: 600;
 }
 
-.signup a:hover{
+.signup a:hover {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 .copyright-container{
   position: absolute;
   bottom: 20px;
@@ -177,3 +180,78 @@ i span{
 .copyright-p{
   color: black;
 }
+=======
+/* media quearies */
+@media screen and (max-width: 450px) {
+  * {
+    font-size: 26px;
+  }
+  body {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .form {
+    margin-top: -80px;
+    width: 68%;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 14px;
+  }
+  .username {
+    height: 65px;
+    border-radius: 14px;
+    align-items: center;
+    font-size: 26px;
+  }
+  .password {
+    height: 65px;
+    border-radius: 14px;
+    align-items: center;
+    font-size: 26px;
+  }
+  .password input {
+    font-size: inherit;
+  }
+  .username input {
+    font-size: inherit;
+  }
+  .pass-key:valid ~ .show {
+    font-size: 20px;
+    margin-right: 24px;
+  }
+  .field {
+    height: 65px;
+    margin-top: 28px;
+    border-radius: 14px;
+  }
+  .field input[type="submit"] {
+    font-size: 26px;
+  }
+  .forget {
+    margin-top: 24px;
+  }
+  .facebook,
+  .instagram {
+    height: 55px;
+    padding: 0px 18px;
+    line-height: 65px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+  }
+
+  .facebook span,
+  .facebook i,
+  .instagram span,
+  .instagram i {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .signup {
+    font-size: 26px;
+  }
+}
+>>>>>>> b0d35c81d6a3efeeeb6eb12f1dc7823bb69eb9b4
