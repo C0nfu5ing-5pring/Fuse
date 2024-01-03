@@ -167,3 +167,13 @@ i span{
 .signup a:hover{
   text-decoration: underline;
 }
+
+.copyright-container{
+  position: absolute;
+  bottom: 20px;
+  right: 35%;
+}
+
+.copyright-p{
+  color: black;
+}
