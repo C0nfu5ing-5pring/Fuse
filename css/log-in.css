@@ -9,10 +9,9 @@
 
 body {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  height: 100vh;
+  flex-direction: column;
 }
 
 main{
@@ -158,14 +157,28 @@ h1 {
   text-align: center;
 }
 
-.copyright-container{
-  position: absolute;
-  bottom: 20px;
-  right: 35%;
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+
 }
 
-.copyright-p{
-  color: black;
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.copyright-p {
+    color: white;
+}
+
+.copyright-p::selection {
+    background-color: white;
+    color: black;
 }
 
 /* media quearies */
