@@ -30,7 +30,6 @@
   font-size: 1.35rem;
   margin-left: 12px;
   margin-right: 12px;
-
 }
 
 .brand-logo {
@@ -193,14 +192,27 @@
 
 .product-links {
   text-align: right;
+  position: relative;
+  top: -10px;
+  height: 40px;
+  overflow: hidden;
 }
 
-.product-links a {
+.product-links i {
   display: inline-block;
-  margin-left: 5px;
+  padding: 10px;
   color: black;
   transition: 0.3s;
   font-size: 17px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.product-links i:hover {
+  transform: scale(1.2);
+}
+
+.product-links i.fa-heart:hover {
+  color: red;
 }
 
 footer {
