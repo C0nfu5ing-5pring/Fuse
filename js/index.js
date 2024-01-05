@@ -1,7 +1,7 @@
 const product_Container = document.getElementById("products-container");
 
 function addProducts() {
-  fetch("../data.json")
+  fetch("https://c0nfu5ing-5pring.github.io/Fuse/data.json")
     .then((res) => {
       return res.json();
     })
