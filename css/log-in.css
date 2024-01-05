@@ -171,6 +171,7 @@ i span {
 }
 
 /* media quearies */
+
 @media screen and (max-width: 450px) {
   * {
     font-size: 26px;
