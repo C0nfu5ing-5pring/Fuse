@@ -25,12 +25,21 @@
   content: "";
   margin-right: 200px;
 }
+header a {
+  padding: 10px;
+  display: block;
+}
+
+header a:hover,
+header .active {
+  background-color: #ddd;
+  border-radius: 5px;
+}
 
 .nav-link-left {
   font-size: 1.35rem;
   margin-left: 12px;
   margin-right: 12px;
-
 }
 
 .brand-logo {
@@ -53,6 +62,39 @@
 .right-navbar::before {
   content: "";
   margin-right: 200px;
+}
+
+.CART {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.CART:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.CART label {
+  position: relative;
+  top: 3.4px;
+  left: 10%;
+  font-size: 14px;
+}
+.CART p {
+  position: relative;
+  top: -10px;
+  left: 22%;
+  font-size: 10px;
+  font-weight: 900;
+}
+.CART a {
+  font-size: 22px !important;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+}
+.hovered:hover {
+  background-color: none;
+  border-radius: none;
 }
 
 .search-bar-container {
@@ -287,6 +329,10 @@ footer {
   margin-bottom: 10px;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
 /**MEDIA QUERIES**/
 
 @media (min-width: 1200px) and (max-width: 1240px) {
@@ -423,6 +469,20 @@ footer {
 
   .search-bar {
     width: 70%;
+  }
+
+  .CART label {
+    position: relative;
+    top: -5px;
+    left: 14%;
+    font-size: 14px;
+  }
+  .CART p {
+    position: relative;
+    top: -19px;
+    left: 26%;
+    font-size: 10px;
+    font-weight: 900;
   }
 }
 

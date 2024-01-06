@@ -1,7 +1,12 @@
 const product_Container = document.getElementById("products-container");
 
+let ls = localStorage.getItem("carted");
+let carted = ls.split(",");
+console.log(carted);
+document.getElementById("cart-counter").innerText = carted.length;
+
 function addProducts() {
-  fetch("../data.json")
+  fetch("https://c0nfu5ing-5pring.github.io/Fuse/data.json")
     .then((res) => {
       return res.json();
     })
@@ -28,7 +33,8 @@ function addProducts() {
                                 <div class="product-price"><small>${data[i].small}</small>${data[i].price}</div>
                                 <div class="product-links">
                                   <i class="fa fa-heart"></i>
-                                  <i class="fa fa-shopping-cart" id="cart${data[i].id}" title="Add to Cart"></i>
+                                  <label for="carted${data[i].id}"><i class="fa fa-shopping-cart" title="Add to Cart"></i></label>
+                                  <input type="checkbox" id="carted${data[i].id}">
                                 </div>
                               </div>
                             </div>`;
@@ -49,12 +55,30 @@ function addProducts() {
                                 <div class="product-price"><small>${data[i].small}</small>${data[i].price}</div>
                                 <div class="product-links">
                                   <i class="fa fa-heart"></i>
-                                  <i class="fa fa-shopping-cart" id="cart${data[i].id}" title="Add to Cart"></i>
+                                  <label for="carted${data[i].id}"><i class="fa fa-shopping-cart" title="Add to Cart"></i></label>
+                                  <input type="checkbox" id="carted${data[i].id}">
                                 </div>
                               </div>
                             </div>`;
         }
         product_Container.appendChild(div);
+
+        let checkbox = document.getElementById(`carted${data[i].id}`);
+
+        checkbox.addEventListener("change", (e) => {
+          let id = +e.target.id.slice(6);
+          if (checkbox.checked && carted.indexOf(id) === -1) {
+            carted.push(id);
+            alert("Added To Cart");
+          } else {
+            let index = carted.indexOf(id);
+            carted.splice(index, 1);
+            alert("Removed from Cart");
+          }
+          localStorage.setItem("carted", carted);
+          document.getElementById("cart-counter").innerText = carted.length;
+          console.log(carted);
+        });
       }
     });
 }
