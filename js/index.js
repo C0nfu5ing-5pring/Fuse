@@ -3,11 +3,9 @@ const product_Container = document.getElementById("products-container");
 let ls = localStorage.getItem("carted");
 let carted;
 if (ls) {
-  carted = ls.split(",");
-  console.log(carted);
+  carted = ls.split(",").map((item) => +item);
 } else {
   carted = [];
-  console.log(carted);
 }
 document.getElementById("cart-counter").innerText = carted.length;
 function addProducts() {
@@ -69,23 +67,35 @@ function addProducts() {
         product_Container.appendChild(div);
 
         let checkbox = document.getElementById(`carted${data[i].id}`);
-
-        checkbox.addEventListener("change", (e) => {
-          let id = +e.target.id.slice(6);
-          if (checkbox.checked && carted.indexOf(id) === -1) {
-            carted.push(id);
-            alert("Added To Cart");
-          } else {
-            let index = carted.indexOf(id);
-            carted.splice(index, 1);
-            alert("Removed from Cart");
-          }
-          localStorage.setItem("carted", carted);
-          document.getElementById("cart-counter").innerText = carted.length;
-          console.log(carted);
-        });
+        addToCart(checkbox);
       }
     });
 }
 
 addProducts();
+
+function addToCart(checkbox) {
+  checkbox.addEventListener("change", (e) => {
+    let id = +e.target.id.slice(6);
+    if (checkbox.checked && carted.indexOf(id) === -1) {
+      carted.push(id);
+      checkbox.previousElementSibling.firstChild.style.color = "green";
+      notify(true);
+    } else {
+      notify(false);
+    }
+    localStorage.setItem("carted", carted);
+    document.getElementById("cart-counter").innerText = carted.length;
+  });
+}
+
+function notify(flag) {
+  let notification = document.getElementById("cartnotification");
+  notification.innerHTML = flag
+    ? '<span style="color: rgb(9, 231, 9);">Successfully</span> :&nbsp;&nbsp; Added From Cart'
+    : " Item Already in Cart ";
+  notification.style.display = "block";
+  setTimeout(() => {
+    document.getElementById("cartnotification").style.display = "none";
+  }, 1100);
+}

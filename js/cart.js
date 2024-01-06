@@ -32,8 +32,7 @@ function addProductsToCart() {
                                   <div class="product-price"><small>${data[i].small}</small>${data[i].price}</div>
                                   <div class="product-links">
                                     <i class="fa fa-heart"></i>
-                                    <label for="carted${data[i].id}"><i class="fa fa-shopping-cart" title="Add to Cart"></i></label>
-                                    <input type="checkbox" id="carted${data[i].id}">
+                                    <button class="cartRemover" id="carted${data[i].id}">Delete</button>
                                   </div>
                                 </div>
                               </div>`;
@@ -54,16 +53,34 @@ function addProductsToCart() {
                                   <div class="product-price"><small>${data[i].small}</small>${data[i].price}</div>
                                   <div class="product-links">
                                     <i class="fa fa-heart"></i>
-                                    <label for="carted${data[i].id}"><i class="fa fa-shopping-cart" title="Add to Cart"></i></label>
-                                    <input type="checkbox" id="carted${data[i].id}">
+                                    <button class="cartRemover" id="carted${data[i].id}">Delete</button>
                                   </div>
                                 </div>
                               </div>`;
           }
           cartedContainer.appendChild(div);
+          let element = document.getElementById(`carted${data[i].id}`);
+          element.addEventListener("click", (e) => {
+            let id = +e.target.id.slice(6);
+            let element =
+              e.target.parentElement.parentElement.parentElement.parentElement;
+            element.remove();
+            let index = carted.indexOf(id);
+            carted.splice(index, 1);
+            localStorage.setItem("carted", carted);
+            notify();
+          });
         }
       }
     });
 }
 
 addProductsToCart();
+
+function notify() {
+  let notification = document.getElementById("cartnotification");
+  notification.style.display = "block";
+  setTimeout(() => {
+    document.getElementById("cartnotification").style.display = "none";
+  }, 1100);
+}

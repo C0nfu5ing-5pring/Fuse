@@ -69,7 +69,8 @@ header .active {
   align-items: center;
   font-size: 16px;
 }
-.CART:hover {
+.CART:hover,
+.CART:active {
   background-color: #ddd;
   border-radius: 5px;
   cursor: pointer;
@@ -92,7 +93,8 @@ header .active {
   font-weight: 400;
   font-family: "Sora", sans-serif;
 }
-.hovered:hover {
+.hovered:hover,
+.hovered:active {
   background-color: none;
   border-radius: none;
 }
@@ -331,6 +333,41 @@ footer {
 
 input[type="checkbox"] {
   display: none;
+}
+
+#cartnotification {
+  position: fixed;
+  width: 260px;
+  text-align: center;
+  top: 55px;
+  left: calc(50% - 130px);
+  border: 1px solid black;
+  padding: 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.93);
+  color: white;
+  border-radius: 6px;
+  display: none;
+  animation: cartAnime 0.8s ease-in-out 400ms 1;
+  /* transition: 0.5s display 2s ease-in-out; */
+}
+
+@keyframes cartAnime {
+  100% {
+    transform: translateY(-120px);
+  }
+}
+
+.cartRemover {
+  padding: 1px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(121, 103, 103);
+  position: relative;
+  top: -15px;
 }
 
 /**MEDIA QUERIES**/
