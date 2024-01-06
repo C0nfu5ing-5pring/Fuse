@@ -67,6 +67,8 @@ function addProducts() {
         product_Container.appendChild(div);
 
         let checkbox = document.getElementById(`carted${data[i].id}`);
+        if (carted.indexOf(+checkbox.id.slice(6)) !== -1)
+          checkbox.previousElementSibling.firstChild.style.color = "green";
         addToCart(checkbox);
       }
     });
