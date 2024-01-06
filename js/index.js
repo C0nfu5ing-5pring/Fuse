@@ -1,10 +1,15 @@
 const product_Container = document.getElementById("products-container");
 
 let ls = localStorage.getItem("carted");
-let carted = ls.split(",");
-console.log(carted);
+let carted;
+if (ls) {
+  carted = ls.split(",");
+  console.log(carted);
+} else {
+  carted = [];
+  console.log(carted);
+}
 document.getElementById("cart-counter").innerText = carted.length;
-
 function addProducts() {
   fetch("https://c0nfu5ing-5pring.github.io/Fuse/data.json")
     .then((res) => {
