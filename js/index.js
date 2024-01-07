@@ -28,7 +28,8 @@ function addProducts() {
                                 <div class="product-price"><small>${data[i].small}</small>${data[i].price}</div>
                                 <div class="product-links">
                                   <i class="fa fa-heart"></i>
-                                  <i class="fa fa-shopping-cart" id="cart${data[i].id}" title="Add to Cart"></i>
+                                  <label for="carted"><i class="fa fa-shopping-cart" id="cart${data[i].id}" title="Add to Cart"></i></label>
+                                  <input type="checkbox" id="carted">
                                 </div>
                               </div>
                             </div>`;
@@ -49,12 +50,18 @@ function addProducts() {
                                 <div class="product-price"><small>${data[i].small}</small>${data[i].price}</div>
                                 <div class="product-links">
                                   <i class="fa fa-heart"></i>
-                                  <i class="fa fa-shopping-cart" id="cart${data[i].id}" title="Add to Cart"></i>
+                                  <label for="carted"><i class="fa fa-shopping-cart" id="cart${data[i].id}" title="Add to Cart"></i></label>
+                                  <input type="checkbox" id="carted">
                                 </div>
                               </div>
                             </div>`;
         }
         product_Container.appendChild(div);
+
+        document.getElementById(`cart${data[i].id}`).addEventListener('click', (event) => {
+          let target = event.target.parentElement.parentElement.parentElement.parentElement;
+          console.log(target);
+        });
       }
     });
 }
