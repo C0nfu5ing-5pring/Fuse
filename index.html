@@ -11,80 +11,92 @@
   <link
     href="https://api.fontshare.com/v2/css?f[]=sora@400,700,200,800,2,301,501,500,701,401,601,1,300,801,600&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <header id="header">
+  <section id="header">
+
     <div class="header-container">
-      <div class="left-navbar">
-        <a href="#" class="nav-link-left">Home</a>
-        <a href="about-us.html" class="nav-link-left">About us</a>
-        <a href="our-team.html" class="nav-link-left">Our team</a>
 
-        <body>
-          <header id="header">
-            <div class="header-container">
-              <div class="left-navbar">
-                <a href="#" class="nav-link-left active">Home</a>
-                <a href="about-us.html" class="nav-link-left">About us</a>
-                <a href="our-team.html" class="nav-link-left">Our team</a>
-              </div>
+      <div class="header-brand-name">
+        <a class="brand-name" href="./about-us.html">Fuse</a>
+      </div>
 
-              <div class="logo">
-                <img src="./images/logo.jpg" alt="Brand Logo" class="brand-logo" />
-              </div>
+      <div class="header-search-bar">
+        <label for="search-bar">
+          <input type="text" name="search-bar" id="search-bar" placeholder="Enter product name" maxlength="40">
+        </label>
+      </div>
 
-              <div class="right-navbar">
-                <a href="./wishlist.html" class="nav-link-right">Wishlist</a>
-                <div class="CART">
-                  <p id="cart-counter">0</p>
-                  <label for="CART"><i class="fa-solid fa-cart-shopping"></i></label>
-                  <a href="./cart.html" class="nav-link-right hovered" id="CART">Cart</a>
-                </div>
-                <a href="log-in.html" class="nav-link-right">Login</a>
-              </div>
-            </div>
-          </header>
-          <main>
-            <div class="search-bar-container">
-              <input type="text" class="search-bar" maxlength="60" placeholder="Search" />
-              <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-            </div>
+      <div class="header-nav-links">
+        <a href="./wishlist.html" class="nav-link nav-link-heart"><i class="fa fa-heart"></i></a>
+        <a href="./cart.html" class="nav-link nav-link-cart hovered" id="CART"><i
+            class="fa-solid fa-cart-shopping"></i></a>
+        <a href="./log-in.html" class="nav-link nav-link-user"><i class="fa-solid fa-user"></i></a>
+      </div>
 
-            <div class="logo">
-              <img src="./images/logo.jpg" alt="Brand Logo" class="brand-logo" />
-            </div>
+    </div>
 
-            <<<<<<< HEAD <div class="right-navbar">
-              <a href="./wishlist.html" class="nav-link-right">Wishlist</a>
-              <a href="./cart.html" class="nav-link-right">Cart</a>
-              <a href="log-in.html" class="nav-link-right">Login</a>
+    <input id="toggle" type="checkbox"></input>
+
+    <label for="toggle" class="hamburger">
+      <div class="top-bun"></div>
+      <div class="meat"></div>
+      <div class="bottom-bun"></div>
+    </label>
+
+    <div class="nav">
+      <div class="nav-wrapper">
+        <nav>
+          <a href="./wishlist.html" class="hamburger-nav-link hamburger-nav-link-heart">Wishlist</a><br>
+          <a href="./cart.html" class="hamburger-nav-link hamburger-nav-link-cart">Cart</a><br>
+          <a href="./log-in.html" class="hamburger-nav-link hamburger-nav-link-login">Login</a><br>
+        </nav>
       </div>
     </div>
-  </header>
+
+  </section>
+
   <main>
-    <div class="search-bar-container">
-      <input type="text" class="search-bar" maxlength="60" placeholder="Search" />
-      <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-      =======
-      <section id="cartnotification"></section>
 
-      <div class="backtotop">
-        <a href="#header">Back To Top</a>
-        >>>>>>> a95e36e43b5d5c58b59c8030626a1707cca93314
-      </div>
+    <section class="image-container">
+      <img
+        src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/IMG_4210.jpg?format=webp&w=1366&dpr=1.0"
+        alt="Main Image" class="main-image">
+    </section>
 
-      <section class="products-container" id="products-container"></section>
+    <section id="cartnotification"></section>
+    <section class="products-container" id="products-container"></section>
 
   </main>
+  <script src="./js/index.js"></script>
 
-  <div class="backtotop">
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="backtotop">
     <a href="#header">Back To Top</a>
-  </div>
-
-  <footer>
+  </div>-->
+<!-- <footer>
     <div class="footer-container">
       <div class="footer-div">
         <h4 class="footer-h4">Support</h4>
@@ -136,8 +148,4 @@
     <div class="copyright-container">
       <div class="footer-copyright">Made by Shish Fruitwala and Deepak</div>
     </div>
-  </footer>
-  <script src="./js/index.js"></script>
-</body>
-
-</html>
+  </footer> -->
