@@ -36,8 +36,6 @@ function addProducts() {
                                 <div class="product-price"><small>${data[i].small}</small>${data[i].price}</div>
                                 <div class="product-links">
                                   <i class="fa fa-heart"></i>
-                                  <label for="carted"><i class="fa fa-shopping-cart" id="cart${data[i].id}" title="Add to Cart"></i></label>
-                                  <input type="checkbox" id="carted">
                                   <label for="carted${data[i].id}"><i class="fa fa-shopping-cart" title="Add to Cart"></i></label>
                                   <input type="checkbox" id="carted${data[i].id}">
                                 </div>
@@ -60,37 +58,22 @@ function addProducts() {
                                 <div class="product-price"><small>${data[i].small}</small>${data[i].price}</div>
                                 <div class="product-links">
                                   <i class="fa fa-heart"></i>
-<<<<<<< HEAD
-                                  <label for="carted"><i class="fa fa-shopping-cart" id="cart${data[i].id}" title="Add to Cart"></i></label>
-                                  <input type="checkbox" id="carted">
-=======
                                   <label for="carted${data[i].id}"><i class="fa fa-shopping-cart" title="Add to Cart"></i></label>
                                   <input type="checkbox" id="carted${data[i].id}">
->>>>>>> a95e36e43b5d5c58b59c8030626a1707cca93314
                                 </div>
                               </div>
                             </div>`;
         }
         product_Container.appendChild(div);
 
-<<<<<<< HEAD
-        document.getElementById(`cart${data[i].id}`).addEventListener('click', (event) => {
-          let target = event.target.parentElement.parentElement.parentElement.parentElement;
-          console.log(target);
-        });
-=======
         let checkbox = document.getElementById(`carted${data[i].id}`);
         if (carted.indexOf(+checkbox.id.slice(6)) !== -1)
           checkbox.previousElementSibling.firstChild.style.color = "green";
         addToCart(checkbox);
->>>>>>> a95e36e43b5d5c58b59c8030626a1707cca93314
       }
     });
 }
 
-<<<<<<< HEAD
-addProducts();
-=======
 addProducts();
 
 function addToCart(checkbox) {
@@ -118,4 +101,3 @@ function notify(flag) {
     document.getElementById("cartnotification").style.display = "none";
   }, 1100);
 }
->>>>>>> a95e36e43b5d5c58b59c8030626a1707cca93314

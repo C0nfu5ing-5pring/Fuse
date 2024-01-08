@@ -52,18 +52,16 @@
 .header-nav-links {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   overflow: hidden;
+  height: 40px;
   padding: 5px 0 5px 0;
-}
-
-.header-nav-links {
   padding: 5px;
 }
 
 .nav-link {
   font-size: 30px;
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .nav-link:hover {
@@ -162,7 +160,7 @@ nav a {
 }
 
 nav a:before {
-  content: '';
+  content: "";
   height: 0;
   position: absolute;
   width: 0.25em;
@@ -189,39 +187,39 @@ nav a:hover:before {
 }
 
 .hamburger-nav-link-heart:hover {
-  color: #CE4257;
+  color: #ce4257;
 }
 
 .hamburger-nav-link-cart:hover {
-  color: #7DDE92;
+  color: #7dde92;
 }
 
 .hamburger-nav-link-login:hover {
-  color: #51A3A3;
+  color: #51a3a3;
 }
 
-#toggle:checked+.hamburger .top-bun {
+#toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
   margin-top: 9px;
 }
 
-#toggle:checked+.hamburger .bottom-bun {
+#toggle:checked + .hamburger .bottom-bun {
   opacity: 0;
   transform: rotate(45deg);
 }
 
-#toggle:checked+.hamburger .meat {
+#toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
   margin-top: -4.5px;
 }
 
-#toggle:checked+.hamburger+.nav {
+#toggle:checked + .hamburger + .nav {
   top: 0;
   transform: scale(1);
 }
 
 .image-container {
-  border: red 1px solid;
+  /* border: red 1px solid; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,44 +233,23 @@ nav a:hover:before {
 }
 
 /**cart thing**/
-.CART {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-}
-
-.CART:hover,
-.CART:active {
-  background-color: #ddd;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.CART label {
+#CART {
+  font-size: 26px;
   position: relative;
-  top: 3.4px;
-  left: 10%;
-  font-size: 14px;
+  left: -2%;
 }
 
-.CART p {
+p {
   position: relative;
-  top: -10px;
-  left: 20%;
-  font-size: 10px;
+  top: -16px;
+  font-size: 0.5rem;
+  left: 15%;
   font-weight: 900;
 }
 
-.CART a {
-  font-size: 22px !important;
-  font-weight: 400;
-  font-family: "Sora", sans-serif;
-}
-
-.hovered:hover,
-.hovered:active {
-  background-color: none;
-  border-radius: none;
+#wishlist,
+#login {
+  overflow: hidden;
 }
 
 .products-container {
@@ -413,6 +390,7 @@ input[type="checkbox"] {
   border: 1px solid black;
   padding: 4px 0;
   font-size: 14px;
+  z-index: 84794;
   font-weight: 600;
   background-color: rgba(0, 0, 0, 0.93);
   color: white;
@@ -457,43 +435,21 @@ input[type="checkbox"] {
   }
 }
 
-@media (max-width: 1173px) {}
-
 @media (min-width: 1024px) and (max-width: 1150px) {
-  .CART label {
-    position: relative;
-    top: -5px;
-    left: 14%;
-    font-size: 14px;
-  }
-
-  .CART p {
-    position: relative;
-    top: -19px;
-    left: 26%;
-    font-size: 10px;
-    font-weight: 900;
+  p {
+    top: -16px;
+    left: 12%;
   }
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
-  .CART label {
-    position: relative;
-    top: -5px;
-    left: 14%;
-    font-size: 14px;
-  }
-
-  .CART p {
-    position: relative;
+  p {
     top: -19px;
     left: 26%;
-    font-size: 10px;
-    font-weight: 900;
   }
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .header-brand-name {
     font-size: 38px;
   }
@@ -615,7 +571,6 @@ input[type="checkbox"] {
     justify-content: start;
     flex-direction: column;
   }
-
 }
 
 @media (max-width: 500px) {
@@ -638,7 +593,6 @@ input[type="checkbox"] {
     justify-content: start;
     flex-direction: column;
   }
-
 }
 
 @media (max-width: 460px) {
@@ -663,7 +617,6 @@ input[type="checkbox"] {
     flex-direction: column;
     height: 24px;
   }
-
 }
 
 @media (max-width: 400px) {
@@ -689,7 +642,6 @@ input[type="checkbox"] {
     flex-direction: column;
     height: 24px;
   }
-
 }
 
 @media (max-width: 855px) {
@@ -780,8 +732,11 @@ input[type="checkbox"] {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 768px) and (max-width: 1023px) {
+}
 
-@media (min-width: 1024px) and (max-width: 1150px) {}
+@media (min-width: 1024px) and (max-width: 1150px) {
+}
 
-@media (min-width: 320px) and (max-width: 434px) {}
+@media (min-width: 320px) and (max-width: 434px) {
+}
