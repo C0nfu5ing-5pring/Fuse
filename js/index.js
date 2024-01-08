@@ -68,7 +68,7 @@ function addProducts() {
 
         let checkbox = document.getElementById(`carted${data[i].id}`);
         if (carted.indexOf(+checkbox.id.slice(6)) !== -1)
-          checkbox.previousElementSibling.firstChild.style.color = "green";
+          checkbox.previousElementSibling.firstChild.style.color = "#53FF45";
         addToCart(checkbox);
       }
     });
@@ -81,7 +81,7 @@ function addToCart(checkbox) {
     let id = +e.target.id.slice(6);
     if (checkbox.checked && carted.indexOf(id) === -1) {
       carted.push(id);
-      checkbox.previousElementSibling.firstChild.style.color = "green";
+      checkbox.previousElementSibling.firstChild.style.color = "#53FF45";
       notify(true);
     } else {
       notify(false);
@@ -94,7 +94,7 @@ function addToCart(checkbox) {
 function notify(flag) {
   let notification = document.getElementById("cartnotification");
   notification.innerHTML = flag
-    ? '<span style="color: rgb(9, 231, 9);">Successfully</span> :&nbsp;&nbsp; Added From Cart'
+    ? '<span style="color: #53FF45;">Successfully</span> Added to Cart'
     : " Item Already in Cart ";
   notification.style.display = "block";
   setTimeout(() => {
