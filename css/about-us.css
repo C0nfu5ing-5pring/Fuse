@@ -1,253 +1,404 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  color: black;
-  overflow-x: hidden;
-  font-family: "Sora", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: black;
+    overflow-x: hidden;
+    font-family: "Sora", sans-serif;
 }
 
-*::selection{
+*::selection {
     color: white;
     background-color: black;
 }
 
-header{
+.arrow-container {
+    margin: 20px;
+
+}
+
+.arrow {
+    padding: 5px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.left-div{
+.left-div {
     padding: 20px;
 }
 
-.right-div{
+.right-div {
     padding: 20px;
 }
 
-.left-div-h1{
-    font-size: 120px;
-    margin-top: 30px;
+.left-div-h1 {
+    font-size: 100px;
     font-weight: 800;
 }
 
-.right-div-p{
-    font-size: 28px;
+.right-div-p {
+    font-size: 22px;
     margin-top: 30px;
     font-weight: 500;
 }
 
-.bold{
+.bold {
     font-weight: 700;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-}
-
-.copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.copyright-p {
-    color: white;
-}
-
-.copyright-p::selection {
-    background-color: white;
-    color: black;
-}
-
-.divider{
-    color: black;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 3%;
-    margin-top: 3%;
-}
-
-main{
+main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
 }
 
-.left-div-bottom-h3{
+.left-div-bottom-h3 {
     font-size: 30px;
 }
 
-.left-div-bottom-h5{
+.left-div-bottom-h5 {
     font-size: 23px;
 }
 
-.left-div-bottom-a{
+.left-div-bottom-a {
     margin-right: 50px;
     font-size: 18px;
 }
 
-.left-div-bottom-divider{
+.left-div-bottom-divider {
     width: 80%;
     height: 2px;
     color: black;
 }
 
-.right-div-bottom-h5{
+.right-div-bottom-h5 {
     font-size: 23px;
     margin-top: 2.7%;
 }
 
-.right-div-bottom-p{
-    font-size: 28px;
+.right-div-bottom-p {
+    font-size: 22px;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     font-weight: 500;
 }
+
+footer {
+    background-color: black;
+}
+
+.footer-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.footer-item {
+    padding: 20px;
+}
+
+.footer-item-title {
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer-item-title::selection {
+    color: black;
+    background-color: white;
+}
+
+.footer-item-divider {
+    width: 40%;
+    margin-top: 5px;
+    color: white;
+}
+
+.footer-item-paragraph {
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    color: white;
+}
+
+.footer-item-paragraph::selection {
+    color: black;
+    background-color: white;
+}
+
+
+.footer-item-paragraph:hover {
+    padding-left: 5px;
+}
+
+.footer-item-icon-container {
+    margin: 30px auto;
+}
+
+.footer-item-icon {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.facebook-icon {
+    margin: 0 10px 10px 0;
+    transition: all .2s ease-in-out;
+}
+
+.facebook-icon:hover {
+    color: #3B5998;
+}
+
+.instagram-icon {
+    margin: 0 10px 10px 0;
+}
+
+.twitter-icon {
+    margin: 0 10px 10px 0;
+}
+
+.discord-icon {
+    margin: 0 10px 10px 0;
+    transition: all .2s ease-in-out;
+}
+
+.discord-icon:hover {
+    color: #7289DA;
+}
+
+.footer-divider {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.copyright-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.copyright-image-container {
+    margin-bottom: 20px;
+}
+
+.copyright-paragraph {
+    color: white;
+    text-align: center;
+}
+
+.copyright-paragraph::selection {
+    color: black;
+    background-color: white;
+}
+
+@media (max-width: 640px) {
+    .footer-item-title {
+        color: white;
+        font-size: 15px;
+    }
+
+    .footer-item-divider {
+        width: 40%;
+        margin-top: 5px;
+        color: white;
+    }
+
+    .footer-item-paragraph {
+        font-size: 14px;
+    }
+
+    .footer-item-icon {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 546px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-item-title {
+        color: white;
+        font-size: 15px;
+    }
+
+    .footer-item-divider {
+        width: 40%;
+        margin-top: 5px;
+        color: white;
+    }
+
+    .footer-item-paragraph {
+        font-size: 14px;
+    }
+
+    .footer-item-icon {
+        font-size: 28px;
+    }
+}
+
 /**Media queries**/
 
-@media(max-width: 1000px){
-    header{
+@media (max-width: 1252px) {
+    .left-div-h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 1017px) {
+    .left-div-h1 {
+        font-size: 75px;
+    }
+}
+
+@media(max-width: 1000px) {
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    main{
+    main {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media(max-width: 750px){
-    header{
+@media(max-width: 750px) {
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    main{
+    main {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .left-div-h1{
+    .left-div-h1 {
         font-size: 90px;
     }
 
-    .right-div-p{
-        font-size: 26px;
+    .right-div-p {
+        font-size: 22px;
     }
 
-    .right-div-bottom-p{
-        font-size: 26px;
-    }
-}
-
-@media(max-width: 560px){
-    header{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .left-div-h1{
-        font-size: 80px;
-    }
-
-    .right-div-p{
-        font-size: 25px;
-    }
-
-    .right-div-bottom-p{
-        font-size: 25px;
+    .right-div-bottom-p {
+        font-size: 22px;
     }
 }
 
-@media(max-width: 510px){
-    header{
+@media(max-width: 560px) {
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .left-div-h1{
-        font-size: 75px;
+    .left-div-h1 {
+        font-size: 70px;
     }
 
-    .right-div-p{
-        font-size: 25px;
+    .right-div-p {
+        font-size: 22px;
     }
 
-    .right-div-bottom-p{
-        font-size: 25px;
+    .right-div-bottom-p {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 510px) {
+    header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-div-h1 {
+        font-size: 70px;
+    }
+
+    .right-div-p {
+        font-size: 22px;
+    }
+
+    .right-div-bottom-p {
+        font-size: 22px;
     }
 
 }
 
-@media(max-width: 482px){
-    header{
+@media(max-width: 482px) {
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .left-div-h1{
+    .left-div-h1 {
         font-size: 60px;
     }
 
-    .right-div-p{
-        font-size: 23px;
+    .right-div-p {
+        font-size: 22px;
     }
 
-    .right-div-bottom-p{
-        font-size: 23px;
+    .right-div-bottom-p {
+        font-size: 22px;
     }
 }
 
-@media(max-width: 395px){
-    header{
+@media(max-width: 395px) {
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .left-div-h1{
+    .left-div-h1 {
         font-size: 55px;
     }
 
-    .right-div-p{
+    .right-div-p {
         font-size: 22px;
     }
 
-    .right-div-bottom-p{
+    .right-div-bottom-p {
         font-size: 22px;
     }
 }
 
-@media(max-width: 366px){
-    header{
+@media(max-width: 366px) {
+    header {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .left-div-h1{
+    .left-div-h1 {
         font-size: 50px;
     }
 
-    .right-div-p{
-        font-size: 21px;
-    }
-
-    .right-div-bottom-p{
-        font-size: 21px;
-    }
-}
-
-@media(max-width: 337px){
-    header{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .left-div-h1{
-        font-size: 45px;
-    }
-
-    .right-div-p{
+    .right-div-p {
         font-size: 20px;
     }
 
-    .right-div-bottom-p{
+    .right-div-bottom-p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 337px) {
+    header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-div-h1 {
+        font-size: 45px;
+    }
+
+    .right-div-p {
+        font-size: 20px;
+    }
+
+    .right-div-bottom-p {
         font-size: 20px;
     }
 }
