@@ -53,7 +53,7 @@ function addProductsToCart() {
                                   <div class="product-price"><small>${data[i].small}</small>${data[i].price}</div>
                                   <div class="product-links">
                                     <i class="fa fa-heart"></i>
-                                    <button class="cartRemover" id="carted${data[i].id}">Delete</button>
+                                    <button class="cartRemover" id="carted${data[i].id}">Remove</button>
                                   </div>
                                 </div>
                               </div>`;
