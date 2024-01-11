@@ -1,121 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fuse | Wishlist</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=sora@400,700,200,800,2,301,501,500,701,401,601,1,300,801,600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header id="header">
-      <div class="header-container">
-        <div class="left-navbar">
-          <a href="./index.html" class="nav-link-left">Home</a>
-          <a href="about-us.html" class="nav-link-left">About us</a>
-          <a href="our-team.html" class="nav-link-left">Our team</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuse | Wishlist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=sora@400,700,200,800,2,301,501,500,701,401,601,1,300,801,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/wishlist.css" />
+</head>
 
-        <div class="logo">
-          <img src="./images/logo.jpg" alt="Brand Logo" class="brand-logo" />
-        </div>
-
-        <div class="right-navbar">
-          <a href="#" class="nav-link-right active">Wishlist</a>
-          <a href="./cart.html" class="nav-link-right">Cart</a>
-          <a href="./log-in.html" class="nav-link-right">Login</a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="search-bar-container">
-        <input
-          type="text"
-          class="search-bar"
-          maxlength="60"
-          placeholder="Search"
-        />
-        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+<body>
+  <section id="header">
+    <div class="header-container">
+      <div class="header-brand-name">
+        <a class="brand-name" href="./about-us.html">Fuse</a>
       </div>
 
-      <section
-        class="products-container"
-        id="wishlisted-products-container"
-      ></section>
-    </main>
-
-    <div class="backtotop">
-      <a href="#header">Back To Top</a>
+      <div class="header-nav-links">
+        <a href="./index.html" class="nav-link nav-link-home"><i class="fa-solid fa-house"></i></a>
+        <p id="cart-counter">0</p>
+        <a href="./cart.html" class="nav-link nav-link-cart hovered" id="CART"><i
+            class="fa-solid fa-cart-shopping"></i></a>
+        <a href="./log-in.html" class="nav-link nav-link-user"><i class="fa-solid fa-user" id="login"></i></a>
+      </div>
     </div>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-div">
-          <h4 class="footer-h4">Support</h4>
-          <a class="footer-a">FAQs</a>
-          <a class="footer-a">Contact us</a>
-          <a class="footer-a">Privacy Policy</a>
-          <a class="footer-a">Shipping</a>
-          <a class="footer-a">Returns</a>
-          <a class="footer-a">Product Exchange</a>
-          <a class="footer-a">Cash Back Rewards</a>
-        </div>
+    <input id="toggle" type="checkbox" />
 
-        <div class="footer-div">
-          <h4 class="footer-h4">About</h4>
-          <a class="footer-a">About us</a>
-          <a class="footer-a">Testimonials</a>
-        </div>
+    <label for="toggle" class="hamburger">
+      <div class="top-bun"></div>
+      <div class="meat"></div>
+      <div class="bottom-bun"></div>
+    </label>
 
-        <div class="footer-div">
-          <h4 class="footer-h4">Our Company</h4>
-          <a class="footer-a">Legal Notice</a>
-          <a class="footer-a">Terms and conditions</a>
-          <a class="footer-a">Secure Payment</a>
-        </div>
-
-        <div class="footer-div">
-          <h4 class="footer-h4">Contact</h4>
-          <p class="footer-p">
-            <i class="fa-solid fa-location-crosshairs" style="color: white"></i
-            >&nbsp;419 State 414 Rte Beaver Dams, New York(NY), 14812, USA
-          </p>
-          <p class="footer-p">
-            <i class="fa-solid fa-phone-volume" style="color: white"></i
-            >&nbsp;(607) 936-8058
-          </p>
-          <a class="footer-p"
-            ><i class="fa-solid fa-envelope" style="color: white"></i
-            >&nbsp;example@gmail.com</a
-          >
-        </div>
-
-        <div class="footer-div">
-          <h4 class="footer-h4">Products</h4>
-          <a class="footer-a">New Products</a>
-          <a class="footer-a">Prices Drop</a>
-          <a class="footer-a">Contact us</a>
-          <a class="footer-a">Sitemap</a>
-          <a class="footer-a">Best Sales</a>
-        </div>
+    <div class="nav">
+      <div class="nav-wrapper">
+        <nav>
+          <a href="./index.html" class="hamburger-nav-link hamburger-nav-link-home">Home</a><br />
+          <a href="./cart.html" class="hamburger-nav-link hamburger-nav-link-cart">Cart</a><br />
+          <a href="./log-in.html" class="hamburger-nav-link hamburger-nav-link-login">Login</a><br />
+        </nav>
       </div>
-      <br />
-      <br />
-      <div class="copyright-container">
-        <div class="footer-copyright">Made by Shish Fruitwala and Deepak</div>
-      </div>
-    </footer>
-    <script src="./js/wishlist.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <h2 class="wishlist-title">Your Wishlist</h2>
+  <hr class="wishlist-divider">
+
+  <section class="products-container" id="carted-products-container">
+
+  </section>
+
+  <section id="cartnotification">
+    <span style="color: rgb(9, 231, 9)">Successfully</span> :&nbsp;&nbsp;
+    Removed From Cart
+  </section>
+
+  <h1 class="empty-wishlist">YOUR WHISHLIST IS EMPTY</h1>
+
+  </main>
+
+  <script src="./js/wishlist.js"></script>
+</body>
+
 </html>
