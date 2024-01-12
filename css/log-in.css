@@ -1,12 +1,82 @@
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: "Sora", sans-serif;
-  color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.login-title {
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+.card-divider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-holder {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.text-container {
+    margin-top: 10px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.input-container {
+    margin-top: 6px;
+}
+
+.input {
+    font-size: 16px;
+    padding: 5px 5px 5px 0;
+}
+
+.input:focus {
+    border: 1px black solid;
+}
+
+.log-in-button-container {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.log-in-button {
+    padding: 5px 20px 5px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
 }
