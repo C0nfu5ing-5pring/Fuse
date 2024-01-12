@@ -11,16 +11,15 @@
         href="https://api.fontshare.com/v2/css?f[]=sora@400,700,200,800,2,301,501,500,701,401,601,1,300,801,600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="./css/log-in.css">
+    <link rel="stylesheet" href="./css/sign-up.css">
 </head>
 
 <body>
     <div class="arrow-container">
-        <a href="./index.html"><i class="fa-solid fa-arrow-left arrow"></i></a>
+        <a href="./log-in.html"><i class="fa-solid fa-arrow-left arrow"></i></a>
     </div>
 
     <main>
-
         <div class="main-container">
 
             <div class="image-container">
@@ -30,21 +29,33 @@
             <div class="card-holder">
 
                 <div class="login-title">
-                    <h1 class="login-title-h1">Login</h1>
+                    <h1 class="login-title-h1">Sign up</h1>
                 </div>
 
                 <hr class="card-divider">
 
                 <div class="text-container">
-                    <p class="text">Username</p>
+                    <p class="text">Name</p>
                 </div>
 
                 <div class="input-container">
                     <label for="userName">
-                        <input type="text" maxlength="15" id="userName" class="input" placeholder="Enter your username"
+                        <input type="text" maxlength="15" id="userName" class="input" placeholder="Enter your name"
                             required>
                     </label>
                 </div>
+
+                <div class="text-container">
+                    <p class="text">Last name</p>
+                </div>
+
+                <div class="input-container">
+                    <label for="userName">
+                        <input type="text" maxlength="15" id="userName" class="input" placeholder="Enter your last name"
+                            required>
+                    </label>
+                </div>
+
                 <div class="text-container">
                     <p class="text">Password</p>
                 </div>
@@ -56,30 +67,27 @@
                     </label>
                 </div>
 
-                <div class="forgot-password-container">
+                <div class="text-container">
+                    <p class="text">Re-enter password</p>
+                </div>
 
-                    <p class="forgot-password">forgot password?</p>
-
+                <div class="input-container">
+                    <label for="userPassword">
+                        <input type="password" maxlength="8" id="userPassword" class="input"
+                            placeholder="Enter your password again" required>
+                    </label>
                 </div>
 
                 <div class="log-in-button-container">
                     <button type="button" class="log-in-button">
-                        Login
+                        Sign up
                     </button>
-                </div>
-
-                <div class="create-new-account-container">
-
-                    <a class="create-new-account" href="./sign-up.html">Create new account</a>
-
                 </div>
 
             </div>
 
         </div>
-
     </main>
-
 </body>
 
 </html>
