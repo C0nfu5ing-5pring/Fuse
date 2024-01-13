@@ -628,6 +628,19 @@ input[type="checkbox"] {
   margin-top: 20px;
 }
 
+.back-to-top-container {
+  padding: 5px;
+  background-color: black;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+.back-to-top-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 footer {
   background-color: black;
 }
@@ -682,7 +695,7 @@ footer {
 }
 
 .footer-item-icon {
-  color: white;
+  color: black;
   font-size: 30px;
   cursor: pointer;
 }

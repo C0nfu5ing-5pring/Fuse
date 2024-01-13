@@ -12,8 +12,28 @@
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 19px;
+}
+
+@supports(scrollbar-color: black white) {
+    * {
+        scrollbar-color: black white;
+    }
+}
+
 .arrow-container {
-    margin: 20px;
+    margin: 10px 0 0 10px;
 }
 
 .arrow {
