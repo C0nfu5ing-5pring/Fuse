@@ -446,6 +446,7 @@ footer {
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-top: 20px;
 }
 
 .footer-item {
