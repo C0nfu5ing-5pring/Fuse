@@ -23,4 +23,3 @@ Explore the frontend of our E-Commerce Website by cloning this repository to you
 
 ```bash
 git clone https://github.com/c0nfu5ing-5pring/fuse.git
-cd ecommerce-frontend
