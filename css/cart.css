@@ -429,7 +429,7 @@ input[type="checkbox"] {
     margin: 10px auto;
 }
 
-.empty-cart {
+#empty-cart {
     color: grey;
     text-align: center;
 }

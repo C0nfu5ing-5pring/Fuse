@@ -38,16 +38,14 @@
 
 .arrow {
     padding: 5px;
-    font-size: 30px;
+    font-size: 20px;
     background-color: black;
     color: white;
     border-radius: 50%;
 }
 
 body {
-    background-image: url(https://img.freepik.com/premium-vector/gray-silver-wave-abstract-background_29865-1260.jpg?w=996);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
 }
 
 .main-container {
@@ -55,11 +53,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 .image-container {
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 0;
 }
 
 .brand-logo {
@@ -81,6 +82,9 @@ body {
     padding: 20px;
     border: 2px solid black;
     margin-bottom: 40px;
+    width: 400px;
+    position: absolute;
+    top: 150px;
 }
 
 .text-container {
@@ -99,6 +103,7 @@ body {
 .input {
     font-size: 16px;
     padding: 5px 5px 5px 0;
+    width: 100%;
 }
 
 .input:focus {
@@ -147,4 +152,32 @@ body {
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+    }
+
+    .brand-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-holder {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .brand-logo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 440px) {
+    .card-holder {
+        max-width: 300px;
+    }
 }

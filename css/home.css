@@ -582,6 +582,30 @@ input[type="checkbox"] {
   }
 }
 
+#wishNotification {
+  position: fixed;
+  width: 280px;
+  text-align: center;
+  top: 55px;
+  left: calc(50% - 140px);
+  border: 1px solid black;
+  padding: 4px 0;
+  font-size: 14px;
+  z-index: 99;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.93);
+  color: white;
+  border-radius: 6px;
+  display: none;
+  animation: wishAnime 0.8s ease-in-out 400ms 1;
+}
+
+@keyframes wishAnime {
+  100% {
+    transform: translateY(-120px);
+  }
+}
+
 .cartRemover {
   padding: 1px 14px;
   border-radius: 6px;
@@ -695,7 +719,7 @@ footer {
 }
 
 .footer-item-icon {
-  color: black;
+  color: white;
   font-size: 30px;
   cursor: pointer;
 }

@@ -1,8 +1,11 @@
 const cartedContainer = document.getElementById("carted-products-container");
 let stringData = localStorage.getItem("carted");
+const isEmpty = document.getElementById("empty-cart");
+let carted;
 
-let carted = stringData.split(",");
+carted = stringData ? stringData.split(",") : [];
 carted = carted.map((item) => +item);
+empty();
 function addProductsToCart() {
   fetch("https://c0nfu5ing-5pring.github.io/Fuse/data.json")
     .then((res) => {
@@ -69,6 +72,7 @@ function addProductsToCart() {
             carted.splice(index, 1);
             localStorage.setItem("carted", carted);
             notify();
+            empty();
           });
         }
       }
@@ -83,4 +87,12 @@ function notify() {
   setTimeout(() => {
     document.getElementById("cartnotification").style.display = "none";
   }, 1100);
+}
+
+function empty() {
+  if (carted.length > 0) {
+    isEmpty.style.display = "none";
+  } else {
+    isEmpty.style.display = "block";
+  }
 }

@@ -1,10 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
     color: black;
     scroll-behavior: smooth;
+}
+
+::-moz-selection {
+    background-color: black;
+    color: white;
 }
 
 ::selection {
@@ -18,28 +24,37 @@
 
 .arrow {
     padding: 5px;
-    font-size: 30px;
+    font-size: 20px;
     background-color: black;
     color: white;
     border-radius: 50%;
 }
 
-body {
-    background-image: url(https://img.freepik.com/premium-vector/gray-silver-wave-abstract-background_29865-1260.jpg?w=996);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    position: absolute;
+    top: 0;
 }
 
 .brand-logo {
@@ -60,6 +75,9 @@ body {
 .card-holder {
     padding: 20px;
     border: 2px solid black;
+    width: 400px;
+    position: absolute;
+    top: 150px;
 }
 
 .text-container {
@@ -78,6 +96,7 @@ body {
 .input {
     font-size: 16px;
     padding: 5px 5px 5px 0;
+    width: 100%;
 }
 
 .input:focus {
@@ -91,6 +110,8 @@ body {
 .forgot-password {
     font-size: 13.5px;
     cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
@@ -106,6 +127,8 @@ body {
 .create-new-account {
     font-size: 13.5px;
     cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
@@ -126,4 +149,32 @@ body {
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+    }
+
+    .brand-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-holder {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .brand-logo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 440px) {
+    .card-holder {
+        max-width: 300px;
+    }
 }
